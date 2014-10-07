@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'LiberationSans-Regular';
+    src: url('./webfonts/LiberationSans-Regular.ttf');
+}
+
+#carousel {
+    margin-top: 2%;
+}
+
 .logo {
     margin-bottom: 2%;
 }
@@ -12,6 +21,7 @@
     float: none;
     display: inline;
     padding: 1%;
+    font-family: 'LiberationSans-Regular';
 }
 
 .recyclepercent {
@@ -56,6 +66,7 @@
     display: block;
     white-space: nowrap;
     color: #aaa;
+    font-family: 'LiberationSans-Regular';
 }
  
  

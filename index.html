@@ -38,7 +38,7 @@
 <!-- Begin Logo -->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img id="img-responsive" class="logo" src="images/FOA_logo.png" height="60px" width="auto" alt="FOA Logo">
+            <img id="img-responsive" class="logo" src="images/FOA_logo.png" height="150px" width="auto" alt="FOA Logo">
             </div>
         </div>
         <div class="row">
@@ -51,26 +51,29 @@
             <div class="date col-xs-4 col-sm-4 col-md-4 col-lg-4">
                 <h4 class="datestyle fa" >Friends of Audubon Fundraising Goal</h4>
             </div>
-            <div class="rolling col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="rolling col-xs-2 col-sm-2 col-md-2 col-lg-2">
                 <h1 class="recyclepercent fa" title="Yearly Goal.">$196,000</h1>
             </div>
-            <div class="daily col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                <h1 class="recyclechange fa" title="Nice. You increased your recycling rate from yesterday">Raised: 10%</h1>
+            <div class="daily col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h1 class="recyclechange fa" title="Nice. You increased your goal from yesterday">Raised: 10%</h1>
             </div>
             <div class="mood col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                <h1 class="directionmeh fa fa-meh-o" title="Meh. You could still recycle better."></h1>
+                <h1 class="directionmeh fa fa-meh-o" title="Meh. You could still do better."></h1>
             </div>
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
             </div>
         </div>
-<!-- Begin Left Side Content -->
         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            </div>
+        </div>
+<!-- Begin Left Side Content -->
+        <div class="row" id="carousel">
 <!-- Begin Carousel -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div id="chart" class="royalSlider rsMinW">
-                <iframe height=350 width=350 src="<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=2015115968&amp;format=interactive"></iframe>
-                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=1381073472&amp;format=interactive"></iframe>
-                <img class="rsImg img-responsive" src="images/kindergarten.png" height="350" width="auto" alt="Cute Kids"/>
+                <iframe width="600" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=2015115968&amp;format=interactive"></iframe>
+                <iframe width="600" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=1381073472&amp;format=interactive"></iframe>
                 <img class="rsImg img-responsive" src="images/mariogino.png" height="350" width="auto" alt="Totally a Mafia Front"/>
             </div>
             </div>
@@ -93,11 +96,11 @@
 jQuery(document).ready(function($) {
     $(".royalSlider").royalSlider({
         autoScaleSlider: 'true',
-        autoScaleSliderHeight: 450,
+        autoScaleSliderHeight: 350,
         imgScaleMode: 'fit',
-        imageAlignCenter: 'false',
+        imageAlignCenter: 'true',
         controlNavigation: 'bullets',
-        numImagesToPreload: 25,
+        numImagesToPreload: 3,
         arrowsNav: 'true',
         arrowsNavAutoHide: 'true',
         arrowsNavHideOnTouch: 'true',
@@ -109,10 +112,6 @@ jQuery(document).ready(function($) {
     	usePreloader: 'true',
     	keyboardNavEnabled: 'true',
     	controlsInside: 'true',
-    	deeplinking: { 
-    	    enabled: 'true',
-    	    change: 'true',
-    	    prefix: 'portfolio-'}
     });  
 });
 </script>

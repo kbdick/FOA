@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-   	var URL = "1LnQsIM5kSHl4g1aYNoT7-3bvB0yp2EWE1p20r56XEc8";
+   	var URL = "1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w";
   		Tabletop.init( { 
   		key: URL, 
   		callback: showInfo, 
   		parseNumbers: true,
-  		wanted: [ "Data", "percentToday" ],
+  		wanted: [ "Fundraising", "percentToday" ],
   		simpleSheet: true 
   		} );
   	
 // Tabletop Callback
     function showInfo(data) {
-    recycleData = data;
-    console.log( "Here is your data", recycleData);
+    audubonData = data;
+    console.log( "Here is your data", audubonData);
 
 // Date functions  
     $( "#date" ).datepicker();
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
 var chart = c3.generate({
     bindto: '#donutchart',
     data: {
-        // recyclePercent data
+        // Audubon data
         columns: [
-            ['Recycling', recycleData[0].recyclepercent],
-            ['Landfill', recycleData[1].recyclepercent],
+            ['Hawkwalk', audubonData[0].marker],
+            ['Winter Gala', audubonData[1].marker],
         ],
         type : 'donut',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -38,8 +38,8 @@ var chart = c3.generate({
     bindto: '#areachart',
     data: {
         columns: [
-            ['Recycling', 300, 350, 300, 0, 0, 0],
-            ['Landfill', 130, 100, 140, 200, 150, 50]
+            ['Events', 300, 350, 300, 0, 0, 0],
+            ['Miscellaneous', 130, 100, 140, 200, 150, 50]
         ],
         types: {
             data1: 'area',
@@ -53,7 +53,7 @@ var chart = c3.generate({
     bindto: '#gaugechart',
     data: {
         columns: [
-            ['Recycling Rate', recycleData[0].weight],
+            ['Hawk Walk', audubonData[0].marker],
         ],
         type: 'gauge',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -87,8 +87,8 @@ var chart = c3.generate({
 
 // Top Row functions
 
-    $("#recyclePercent").text(recycleData[0].recyclepercent);
-    $("#recycleChange").text(recycleData[1].recyclepercent);
+    $("#recyclePercent").text(audubonData[0].recyclepercent);
+    $("#recycleChange").text(audubonData[1].recyclepercent);
 
 // Autocomplete with categories    
       $.widget( "custom.catcomplete", $.ui.autocomplete, {
@@ -202,6 +202,7 @@ var chart = c3.generate({
   });
     }
 
+/*
     $('#leftcontent').royalSlider({
         autoScaleSlider: 'true',
         autoScaleSliderHeight: 450,
@@ -249,5 +250,5 @@ var chart = c3.generate({
     	    change: 'true',
     	    prefix: 'recycle-'}
     });
-    
+*/    
 })

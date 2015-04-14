@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   		key: URL, 
   		callback: showInfo, 
   		parseNumbers: true,
-  		wanted: [ "Fundraising", "percentToday" ],
+  		wanted: [ "Fundraising" ],
   		simpleSheet: true 
   		} );
   	

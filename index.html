@@ -68,27 +68,11 @@
         <div class="row" id="carousel">
 <!-- Begin Carousel -->
             <div id="chart" class="royalSlider rsMinW">
-            <div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <iframe class="floatright" width="350" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=2015115968&amp;format=interactive"></iframe>        
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">    
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">    
-                    <img class="floatleft rsImg img-responsive" src="images/hawkwalk.jpg" height="350" width="auto" alt="Hawk Walk"/>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">    
-                </div>
-            </div>
-            <div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <iframe width="1000" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1WaDf5UEy-WFd7QQvoFXg-ZbEJHNmYPqiUraLzjFSr-w/pubchart?oid=1381073472&amp;format=interactive"></iframe>
-                </div>
-            </div>
-            <div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <img class="rsImg img-responsive" src="images/mariogino.png" height="300" width="auto" alt="Totally a Mafia Front"/>
-                </div>
+                <div id="donutchart"></div>
+                <div id="areachart"></div>
+                <div id="gaugechart"></div>
+                <img class="floatleft rsImg img-responsive" src="images/hawkwalk.jpg" height="350" width="auto" alt="Hawk Walk"/>
+                <img class="rsImg img-responsive" src="images/mariogino.png" height="300" width="auto" alt="Totally a Mafia Front"/>
             </div>
             </div>
         </div>
@@ -102,6 +86,10 @@
 <!-- End Footer -->
     </div>
 </div>
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/c3/c3-0.4.9/c3.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
     $(".royalSlider").royalSlider({

@@ -38,8 +38,8 @@ var chart = c3.generate({
     bindto: '#areachart',
     data: {
         columns: [
-            ['Goal', audubonData[0].goal, audubonData[1].goal, audubonData[2].goal, audubonData[3].goal, audubonData[4].goal, audubonData[5].goal, audubonData[6].goal, audubonData[7].goal],
-            ['Raised', audubonData[0].raised, audubonData[1].raised, audubonData[2].raised, audubonData[3].raised, audubonData[4].raised, audubonData[5].raised, audubonData[6].raised, audubonData[7].raised]
+            ['Goal', audubonData[0].goal, audubonData[1].goal, audubonData[2].goal, audubonData[3].goal, audubonData[4].goal, audubonData[5].goal, audubonData[6].goal],
+            ['Raised', audubonData[0].raised, audubonData[1].raised, audubonData[2].raised, audubonData[3].raised, audubonData[4].raised, audubonData[5].raised, audubonData[6].raised]
         ],
         types: {
             data1: 'area',

@@ -13,18 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log( "Here is your data", audubonData);
 
 // Top Row functions
-var goalSum = 0;
-for (var i = 0; i < audubonData.totalpercentgoal.length; i++) {
-    goalSum += audubondata.totalpercentgoal[i] << 0;
+var goalTotal = 0;
+var goalDollars = audubonData[].totalpercentgoal;
+for ( var i = 0; i < goalDollars.length; i++ ){
+    goalTotal += goalDollars[i];
 }
 
-var percentSum = 0;
-for (var i = 0; i < audubonData.percentreached.length; i++) {
-    percentSum += audubonData.percentreached[i] << 0;
+var raisedTotal = 0;
+var percentRaised = audubonData[].raised;
+for ( var i = 0; i < percentRaised.length; i++ ){
+    goalTotal += percentRaised[i];
 }
 
-$("#goalDollars").text(goalSum);
-$("#percentRaised").text(percentSum);
+$("#goalDollars").text(goalTotal);
+$("#percentRaised").text(raisedTotal);
 
 
 // Chart functions

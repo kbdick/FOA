@@ -19,13 +19,13 @@ var chart = c3.generate({
     data: {
         // recyclePercent data
         columns: [
-            [audubonData[0].event, audubonData[0].goal],
-            [audubonData[1].event, audubonData[1].goal],
-            [audubonData[2].event, audubonData[2].goal],
-            [audubonData[3].event, audubonData[3].goal],
-            [audubonData[4].event, audubonData[4].goal],
-            [audubonData[5].event, audubonData[5].goal],
-            [audubonData[6].event, audubonData[6].goal],
+            [audubonData[0].event, audubonData[0].totalpercentgoal],
+            [audubonData[1].event, audubonData[1].totalpercentgoal],
+            [audubonData[2].event, audubonData[2].totalpercentgoal],
+            [audubonData[3].event, audubonData[3].totalpercentgoal],
+            [audubonData[4].event, audubonData[4].totalpercentgoal],
+            [audubonData[5].event, audubonData[5].totalpercentgoal],
+            [audubonData[6].event, audubonData[6].totalpercentgoal],
         ],
         type : 'donut',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -52,7 +52,7 @@ var chart = c3.generate({
     bindto: '#gaugechart',
     data: {
         columns: [
-            [audubonData[0].event, audubonData[0].percentgoal],
+            [audubonData[0].event, audubonData[0].percentreached],
         ],
         type: 'gauge',
         onclick: function (d, i) { console.log("onclick", d, i); },

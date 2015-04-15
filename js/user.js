@@ -44,13 +44,13 @@ var chart2 = c3.generate({
         types: {
             data1: 'area',
             data2: 'area-spline'
-        }
+        },
         axis: {
-             y: {
+              y: {
                 label: 'Thousands of $'
                 }
-}
-    }
+            }
+        }
 });
 
 var chart3 = c3.generate({

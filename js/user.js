@@ -19,13 +19,13 @@ var chart = c3.generate({
     data: {
         // recyclePercent data
         columns: [
-            ['audubonData[0].event', audubonData[0].goal],
-            ['audubonData[1].event', audubonData[1].goal],
-            ['audubonData[2].event', audubonData[2].goal],
-            ['audubonData[3].event', audubonData[3].goal],
-            ['audubonData[4].event', audubonData[4].goal],
-            ['audubonData[5].event', audubonData[5].goal],
-            ['audubonData[6].event', audubonData[6].goal],
+            [audubonData[0].event, audubonData[0].goal],
+            [audubonData[1].event, audubonData[1].goal],
+            [audubonData[2].event, audubonData[2].goal],
+            [audubonData[3].event, audubonData[3].goal],
+            [audubonData[4].event, audubonData[4].goal],
+            [audubonData[5].event, audubonData[5].goal],
+            [audubonData[6].event, audubonData[6].goal],
         ],
         type : 'donut',
         onclick: function (d, i) { console.log("onclick", d, i); },
@@ -38,8 +38,8 @@ var chart = c3.generate({
     bindto: '#areachart',
     data: {
         columns: [
-            ['Recycling', 300, 350, 300, 0, 0, 0],
-            ['Landfill', 130, 100, 140, 200, 150, 50]
+            ['Goal', audubonData[0].goal, audubonData[1].goal, audubonData[2].goal, audubonData[3].goal, audubonData[4].goal, audubonData[5].goal, audubonData[6].goal, audubonData[7].goal],
+            ['Raised', audubonData[0].raised, audubonData[1].raised, audubonData[2].raised, audubonData[3].raised, audubonData[4].raised, audubonData[5].raised, audubonData[6].raised, audubonData[7].raised]
         ],
         types: {
             data1: 'area',
@@ -52,7 +52,7 @@ var chart = c3.generate({
     bindto: '#gaugechart',
     data: {
         columns: [
-            ['audubonData[0].event', audubonData[0].percentgoal],
+            [audubonData[0].event, audubonData[0].percentgoal],
         ],
         type: 'gauge',
         onclick: function (d, i) { console.log("onclick", d, i); },

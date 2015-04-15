@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Top Row functions
 var goalTotal = 0;
-var goalDollars = audubonData[].totalpercentgoal;
-for ( var i = 0; i < goalDollars.length; i++ ){
-    goalTotal += goalDollars[i];
+var goalDollars = audubonData.totalpercentgoal;
+for ( var a = 0; a < goalDollars.length; a++ ){
+    goalTotal += goalDollars[a];
 }
 
 var raisedTotal = 0;
-var percentRaised = audubonData[].raised;
-for ( var i = 0; i < percentRaised.length; i++ ){
-    goalTotal += percentRaised[i];
+var percentRaised = audubonData.raised;
+for ( var b = 0; b < percentRaised.length; b++ ){
+    goalTotal += percentRaised[b];
 }
 
 $("#goalDollars").text(goalTotal);

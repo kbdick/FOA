@@ -81,5 +81,5 @@ document.addEventListener('DOMContentLoaded', function () {
         height: 180
         }
     });
-})
+}
 }

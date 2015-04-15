@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Chart functions
 
-var chart = c3.generate({
+var chart1 = c3.generate({
     bindto: '#donutchart',
     data: {
         // recyclePercent data
@@ -34,11 +34,11 @@ var chart = c3.generate({
     }
 });
 
-var chart = c3.generate({
+var chart2 = c3.generate({
     bindto: '#areachart',
     data: {
         columns: [
-            ['Goal', audubonData[0].goal, audubonData[1].goal, audubonData[2].goal, audubonData[3].goal, audubonData[4].goal, audubonData[5].goal, audubonData[6].goal],
+            ['Goal', audubonData[0].dollargoal, audubonData[1].dollargoal, audubonData[2].dollargoal, audubonData[3].dollargoal, audubonData[4].dollargoal, audubonData[5].dollargoal, audubonData[6].dollargoal],
             ['Raised', audubonData[0].raised, audubonData[1].raised, audubonData[2].raised, audubonData[3].raised, audubonData[4].raised, audubonData[5].raised, audubonData[6].raised]
         ],
         types: {
@@ -48,7 +48,7 @@ var chart = c3.generate({
     }
 });
 
-var chart = c3.generate({
+var chart3 = c3.generate({
     bindto: '#gaugechart',
     data: {
         columns: [

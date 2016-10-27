@@ -2,6 +2,22 @@
  * @author Lance Snider - lance@lancesnider.com
 */
 
+
+    //data connection
+    // Retrieve Data from TableTop
+    /* global Tabletop */
+document.addEventListener('DOMContentLoaded', function() {
+  		Tabletop.init( { 
+  		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
+  		callback: showInfo,
+  		parseNumbers: true,
+  		simpleSheet: true 
+  		});
+});
+    // callback returning data
+function showInfo(data, tabletop) { 
+    console.log( "Here is the Audubon Thermometer Data", data); 
+
 //editable vars
 var goalAmount = 3000;//how much are you trying to get
 /* global data */
@@ -196,3 +212,8 @@ function commaSeparateNumber(val){
     }
     return numberPrefix + val + numberSuffix;
 }
+
+// last brace is for closing tabletop callback
+}
+
+// end tabletop connection

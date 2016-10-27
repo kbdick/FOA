@@ -19,7 +19,7 @@ function showInfo(data, tabletop) {
     console.log( "Here is the Audubon Thermometer Data", data); 
 
 //editable vars
-var goalAmount = 3000;//how much are you trying to get
+var goalAmount = data[0].dollarsgoal;//how much are you trying to get
 /* global data */
 var currentAmount = data[0].dollarsraised;//how much do you currently have (if you want to define in js, not html)
 var animationTime = 3000;//in milliseconds

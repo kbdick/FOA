@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
   	
 
 // Tabletop Callback
-    var currentTotal = function showInfo(data) {
-    console.log( "Here is your data", data); 
-    };
+    function showInfo(Audubondata) {
+    console.log( "Here is your data", Audubondata); 
+    return Audubondata;
+    }
 });
 
-var currentAmount = 1367;
+var currentAmount = data[0].dollarsraised;

@@ -9,5 +9,7 @@ var currentAmount = document.addEventListener('DOMContentLoaded', function() {
   		parseNumbers: true,
   		simpleSheet: true 
   		});
-  		return data[0].dollarsraised;
+  		return currentAmount.data[0].dollarsraised;
 });
+
+

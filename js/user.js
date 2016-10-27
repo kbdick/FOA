@@ -5,11 +5,10 @@
 var currentAmount = document.addEventListener('DOMContentLoaded', function() {
   		Tabletop.init( { 
   		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
-  		callback: function(data, tabletop) { console.log( "Here is the Audubon Thermometer Data", data) }, 
+  		callback: function(data, tabletop) { console.log( "Here is the Audubon Thermometer Data", data); return currentAmount.data[0].dollarsraised;}, 
   		parseNumbers: true,
   		simpleSheet: true 
   		});
-  		return currentAmount.data[0].dollarsraised;
 });
 
 

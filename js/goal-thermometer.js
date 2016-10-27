@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   		Tabletop.init( { 
   		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
   		callback: showInfo,
-  		parseNumbers: false,
+  		parseNumbers: true,
   		simpleSheet: true 
   		});
 });

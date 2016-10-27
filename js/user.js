@@ -5,17 +5,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   		Tabletop.init( { 
   		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
-  		callback: showInfo, 
+  		callback: function(data, tabletop) { console.log( "Here is the Audubon Thermometer Data", data) }, 
   		parseNumbers: true,
   		simpleSheet: true 
   		});
-  	
-
-// Tabletop Callback
-    function showInfo(Audubondata) {
-    console.log( "Here is your data", Audubondata); 
-    return Audubondata;
-    }
-});
-
+  		
 var currentAmount = data[0].dollarsraised;
+    
+});

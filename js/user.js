@@ -13,6 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function showInfo(data, tabletop) { 
     console.log( "Here is the Audubon Thermometer Data", data); 
+    var currentAmount = data[0].dollarsraised;
 }
-/* global tabletop */
-var currentAmount = tabletop.data[0].dollarsraised;

@@ -3,13 +3,13 @@
     // Retrieve Data from TableTop
     /* global Tabletop */
 document.addEventListener('DOMContentLoaded', function() {
-   	var URL = "https://docs.google.com/spreadsheets/d/1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY";
+   	var URL = "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY";
   		Tabletop.init( { 
   		key: URL, 
   		callback: showInfo, 
   		parseNumbers: true,
   		simpleSheet: true 
-  		} );
+  		});
   	
 
 // Tabletop Callback

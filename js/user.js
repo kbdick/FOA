@@ -12,10 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
   	
 
 // Tabletop Callback
-    function showInfo(data) {
+    var currentTotal = function showInfo(data) {
     console.log( "Here is your data", data); 
-        var currentTotal = 1367;
-        return currentTotal;
-    }
-    var currentAmount = currentTotal;
+    };
 });
+
+var currentAmount = 1367;

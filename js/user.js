@@ -3,9 +3,8 @@
     // Retrieve Data from TableTop
     /* global Tabletop */
 document.addEventListener('DOMContentLoaded', function() {
-   	var URL = "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY";
   		Tabletop.init( { 
-  		key: URL, 
+  		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
   		callback: showInfo, 
   		parseNumbers: true,
   		simpleSheet: true 

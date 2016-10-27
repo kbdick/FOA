@@ -3,29 +3,36 @@
     src: url('./webfonts/LiberationSans-Regular.ttf');
 }
 
-.logo {
+#logo {
     margin-bottom: 2%;
+}
+
+#carouselRow {
+    margin-bottom: 3%;
 }
 
 .date, .rolling, .daily {
     margin-right: 3%;
 }
  
-.datestyle, .recyclepercent, .recyclechange, .directiondown, .directionup {
-    color: #aaa;
+.datestyle, .foapercent, .foachange, .directiondown, .directionup {
+    color: #444;
     vertical-align: bottom;
     float: none;
     display: inline;
     padding: 1%;
+    font-size: 1em;
     font-family: 'LiberationSans-Regular';
 }
 
-.recyclepercent {
+.percent {
     color: #aaa;
+    vertical-align: bottom;
 }
 
-.recyclechange {
+.change {
     color: #5cb85c;
+    vertical-align: bottom;
 }
 
 .directionhappy {
@@ -37,7 +44,7 @@
 }
 
 .directionmeh {
-    color: #aaa;
+    color: #444;
     vertical-align: bottom;
     float: none;
     display: inline;
@@ -45,10 +52,11 @@
  }
 
 .minibar, .miniline {
-    color: #aaa;
+    color: #444;
     vertical-align: bottom;
     float: none;
     display: inline;
+    font-size: 0.8em;
 }
 
 .floatright {
@@ -61,7 +69,7 @@
     min-width: 350;
 }
 
-.marquee{
+.marquee {
     -webkit-animation-name: marquee;
     -webkit-animation-timing-function: linear;
     -webkit-animation-duration:10s;
@@ -71,10 +79,9 @@
     overflow: hidden;
     display: block;
     white-space: nowrap;
-    color: #aaa;
+    color: #444;
 }
- 
- 
+
 @-webkit-keyframes marquee{
     0%{
         text-indent: 95%;
@@ -92,27 +99,6 @@
     border: solid 2px #ccc;
     max-height: 335px;
 }
-
-/* Line Chart Styles */
-/*
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-}
-
-.circle {
-    fill: #666;
-}
-
-.line
-{
-    stroke: #aaa;
-    fill: none;
-}
-
-Trying a new line graph */
 
 /* Alternative line graph styles */
 
@@ -135,9 +121,9 @@ path {
 }
 
 text {
-	font-family: Arial;
+	font-family: 'LiberationSans-Regular';
 	font-size: 8pt;
-	fill: #787878;
+	fill: #444;
 }
 
 line {

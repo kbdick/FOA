@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
   		simpleSheet: true 
   		});
 });
-
+    // callback returning data
 function showInfo(data, tabletop) { 
     console.log( "Here is the Audubon Thermometer Data", data); 
-    var currentAmount = data[0].dollarsraised;
 }
+
+// end tabletop connection

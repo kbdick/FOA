@@ -1,11 +1,13 @@
 /**
  * @author Lance Snider - lance@lancesnider.com
+ * modified with Tabletop by Kevin Dick - kbdick@389nm.com
 */
 
-
+(function() {
     //data connection
     // Retrieve Data from TableTop
     /* global Tabletop */
+
 document.addEventListener('DOMContentLoaded', function() {
   		Tabletop.init( { 
   		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
@@ -15,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   		});
 });
     // callback returning data
+
 function showInfo(data, tabletop) { 
     console.log( "Here is the Audubon Thermometer Data", data); 
 
@@ -217,3 +220,4 @@ function commaSeparateNumber(val){
 }
 
 // end tabletop connection
+})();

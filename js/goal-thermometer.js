@@ -28,13 +28,13 @@ var currentAmount = data[0].dollarsraised;//how much do you currently have (if y
 var animationTime = 3000;//in milliseconds
 var numberPrefix = "$";//what comes before the number (set to "" if no prefix)
 var numberSuffix = "";//what goes after the number
-var tickMarkSegementCount = 3;//each segement adds 40px to the height
+var tickMarkSegementCount = 6;//each segement adds 40px to the height
 var widthOfNumbers = 50;//the width in px of the numbers on the left
 
 //standard resolution images
 var glassTopImg = "images/PencilThermTop.png";
-var glassBodyImg = "images/PencilThermMiddle.png";
-var redVerticalImg = "images/redVertical.png";
+var glassBodyImg = "images/PencilThermBody.png";
+var redVerticalImg = "images/yellowVertical.png";
 var tooltipFGImg = "images/tickShine.png";
 var glassBottomImg = "images/PencilThermBottom.png";
 var tootipPointImg = "images/tooltipPoint.png";
@@ -43,7 +43,7 @@ var tooltipButtImg = "images/tooltipButt.png";
 
 //high res images
 var glassTopImg2x = "images/PencilThermTop.png";
-var glassBodyImg2x = "images/PencilThermMiddle.png";
+var glassBodyImg2x = "images/PencilThermBody.png";
 var redVerticalImg2x = "images/redVertical2x.png";
 var tooltipFGImg2x = "images/tickShine2x.png";
 var glassBottomImg2x = "images/PencilThermBottom.png";

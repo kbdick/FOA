@@ -86,7 +86,7 @@ function determineImageSet(){
 		//redVerticalImg = redVerticalImg2x;
 		//glassBottomImg = glassBottomImg2x;
 		tootipPointImg = tootipPointImg2x;
-		tooltipButtImg = tooltipButtImg2x;	*/
+		tooltipButtImg = tooltipButtImg2x;	
 	}
 	
 	createGraphics();

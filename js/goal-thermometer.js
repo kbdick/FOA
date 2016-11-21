@@ -51,7 +51,6 @@ var tooltipFGImg2x = "images/tickShine2x.png";
 var tootipPointImg2x = "images/tooltipPoint2x.png";
 var tooltipMiddleImg2x = "images/tooltipMiddle2x.png";
 var tooltipButtImg2x = "images/tooltipButt2x.png";
-*/
 
 /////////////////////////////////////////
 // ------ don't edit below here ------ //

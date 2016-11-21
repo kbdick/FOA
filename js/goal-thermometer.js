@@ -33,21 +33,22 @@ var widthOfNumbers = 50;//the width in px of the numbers on the left
 
 //standard resolution images
 var audubonThermometer = "images/AudubonThermometer.png"
-//var glassTopImg = "images/glassTop.png";
-//var glassBodyImg = "images/glassBody.png";
-//var redVerticalImg = "images/redVertical.png";
+var glassTopImg = "images/PencilThermTop.png";
+var glassBodyImg = "images/PencilThermMiddle.png";
+var redVerticalImg = "images/redVertical.png";
 var tooltipFGImg = "images/tickShine.png";
-//var glassBottomImg = "images/glassBottom.png";
+var glassBottomImg = "images/PencilThermBottom.png";
 var tootipPointImg = "images/tooltipPoint.png";
 var tooltipMiddleImg = "images/tooltipMiddle.png";
 var tooltipButtImg = "images/tooltipButt.png";
 
 //high res images
-//var glassTopImg2x = "images/glassTop2x.png";
-//var glassBodyImg2x = "images/glassBody2x.png";
-//var redVerticalImg2x = "images/redVertical2x.png";
+var audubonThermometer = "images/AudubonThermometer.png"
+var glassTopImg2x = "images/PencilThermTop.png";
+var glassBodyImg2x = "images/PencilThermMiddle.png";
+var redVerticalImg2x = "images/redVertical2x.png";
 var tooltipFGImg2x = "images/tickShine2x.png";
-//var glassBottomImg2x = "images/glassBottom2x.png";
+var glassBottomImg2x = "images/PencilThermBottom.png";
 var tootipPointImg2x = "images/tooltipPoint2x.png";
 var tooltipMiddleImg2x = "images/tooltipMiddle2x.png";
 var tooltipButtImg2x = "images/tooltipButt2x.png";
@@ -82,9 +83,10 @@ function determineImageSet(){
 	if(resolution2x){	
 		//switch the regular for 2x res graphics
 		audubonThermometer = audubonThermometer;
-		//glassBodyImg = glassBodyImg2x;
-		//redVerticalImg = redVerticalImg2x;
-		//glassBottomImg = glassBottomImg2x;
+		glassTopImg = glassTopImg2x;
+		glassBodyImg = glassBodyImg2x;
+		redVerticalImg = redVerticalImg2x;
+		glassBottomImg = glassBottomImg2x;
 		tootipPointImg = tootipPointImg2x;
 		tooltipButtImg = tooltipButtImg2x;	
 	}
@@ -100,11 +102,12 @@ function createGraphics(){
 		"<div id='therm-numbers'>" + 
 		"</div>" + 
 		"<div id='therm-graphics'>" + 
-			"<img id='therm-top' src='"+audubonThermometer+"'></img>" + 
-			//"<img id='therm-body-bg' src='"+glassBodyImg+"' ></img>" + 
-			//"<img id='therm-body-mercury' src='"+redVerticalImg+"'></img>" + 
+			"<img id='therm-top' src='"+glassTopImg+"'></img>" + 
+			"<img id='therm-body-bg' src='"+glassBodyImg+"' ></img>" + 
+			"<img id='therm-body-mercury' src='"+redVerticalImg+"'></img>" + 
 			"<div id='therm-body-fore'></div>" + 
-			//"<img id='therm-bottom' src='"+glassBottomImg+"'></img>" + 
+			"<img id='therm-bottom' src='"+glassBottomImg+"'></img>" + 
+			"<img id='audubon-thermometer' src='"+audubonThermometer+"'></img>" + 
 			"<div id='therm-tooltip'>" + 
 				"<img class='tip-left' src='"+tootipPointImg+"'></img>" + 
 				"<div class='tip-middle'><p>$0</p></div>" + 
@@ -133,6 +136,7 @@ function createGraphics(){
 	$("#goal-thermometer").css("height",  heightOfBody + thermTopHeight + thermBottomHeight);
 	$("#therm-body-fore").css("height", heightOfBody);
 	$("#therm-bottom").css("top", heightOfBody + thermTopHeight);
+	$("#audubon-thermometer").css("top", heightOfBody + thermTopHeight);
 	mercuryId = $("#therm-body-mercury");
 	mercuryId.css("top", heightOfBody + thermTopHeight);
 	tooltipId = $("#therm-tooltip");

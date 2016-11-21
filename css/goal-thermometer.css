@@ -36,7 +36,7 @@
 
 #therm-body-bg{
      position:absolute;
-     top:60px;
+     top:117px;
      left:0px;
      width:217px;
 }
@@ -44,7 +44,7 @@
 #therm-body-mercury{
      position:absolute;
      bottom:51px;
-     left:105px;
+     left:106px;
      width: 18px;
      height:2px;
 }
@@ -53,7 +53,7 @@
      position:absolute;
      width:217px;
      top:0px;
-     left:105px;
+     left:106px;
      background-repeat:repeat-y;
 }
 

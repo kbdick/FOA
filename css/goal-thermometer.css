@@ -22,7 +22,7 @@
 #therm-graphics{
     float:left;
     position:relative;
-    width:46px;
+    width:217px;
 }
 
 #therm-top{
@@ -30,7 +30,7 @@
     top:0;
     left:7px;
     
-    width:32px;
+    width:217px;
     height:13px;
 }
 
@@ -38,7 +38,7 @@
      position:absolute;
      top:13px;
      left:7px;
-     width:32px;
+     width:217px;
 }
 
 #therm-body-mercury{
@@ -51,7 +51,7 @@
 
 #therm-body-fore{
      position:absolute;
-     width:24px;
+     width:217px;
      top:13px;
      left:11px;
      background-repeat:repeat-y;
@@ -60,7 +60,7 @@
 #therm-bottom{
     position:absolute;
     left:0;
-    width:46px;
+    width:217px;
     height:51px;
 } 
 

@@ -32,7 +32,8 @@ var tickMarkSegementCount = 3;//each segement adds 40px to the height
 var widthOfNumbers = 50;//the width in px of the numbers on the left
 
 //standard resolution images
-var glassTopImg = "images/glassTop.png";
+var audubonThermometer = "images/AudubonThermometer.png"
+/*var glassTopImg = "images/glassTop.png";
 var glassBodyImg = "images/glassBody.png";
 var redVerticalImg = "images/redVertical.png";
 var tooltipFGImg = "images/tickShine.png";
@@ -50,6 +51,7 @@ var glassBottomImg2x = "images/glassBottom2x.png";
 var tootipPointImg2x = "images/tooltipPoint2x.png";
 var tooltipMiddleImg2x = "images/tooltipMiddle2x.png";
 var tooltipButtImg2x = "images/tooltipButt2x.png";
+*/
 
 /////////////////////////////////////////
 // ------ don't edit below here ------ //
@@ -80,12 +82,12 @@ function determineImageSet(){
 	
 	if(resolution2x){	
 		//switch the regular for 2x res graphics
-		glassTopImg = glassTopImg2x;
-		glassBodyImg = glassBodyImg2x;
+		audubonThermometer = audubonThermometer;
+	/*	glassBodyImg = glassBodyImg2x;
 		redVerticalImg = redVerticalImg2x;
 		glassBottomImg = glassBottomImg2x;
 		tootipPointImg = tootipPointImg2x;
-		tooltipButtImg = tooltipButtImg2x;	
+		tooltipButtImg = tooltipButtImg2x;	*/
 	}
 	
 	createGraphics();
@@ -99,11 +101,12 @@ function createGraphics(){
 		"<div id='therm-numbers'>" + 
 		"</div>" + 
 		"<div id='therm-graphics'>" + 
-			"<img id='therm-top' src='"+glassTopImg+"'></img>" + 
-			"<img id='therm-body-bg' src='"+glassBodyImg+"' ></img>" + 
+			"<img id='therm-top' src='"+audubonThermometer+"'></img>" + 
+		/*	"<img id='therm-body-bg' src='"+glassBodyImg+"' ></img>" + 
 			"<img id='therm-body-mercury' src='"+redVerticalImg+"'></img>" + 
 			"<div id='therm-body-fore'></div>" + 
 			"<img id='therm-bottom' src='"+glassBottomImg+"'></img>" + 
+			*/
 			"<div id='therm-tooltip'>" + 
 				"<img class='tip-left' src='"+tootipPointImg+"'></img>" + 
 				"<div class='tip-middle'><p>$0</p></div>" + 

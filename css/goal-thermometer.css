@@ -8,7 +8,7 @@
 }
 
 #therm-numbers{
-    width:50px;
+    width:217px;
     float:left;
     opacity:.4;
 }
@@ -29,32 +29,31 @@
     position:absolute;
     top:0;
     left:0px;
-    
     width:217px;
     height:127px;
 }
 
 #therm-body-bg{
-     position:absolute;
-     top:100px;
-     left:0px;
-     width:217px;
+    position:absolute;
+    top:127px;
+    left:0px;
+    width:217px;
 }
 
 #therm-body-mercury{
-     position:absolute;
-     bottom:51px;
-     left:106px;
-     width: 18px;
-     height:2px;
+    position:absolute;
+    bottom:51px;
+    left:106px;
+    width: 18px;
+    height:2px;
 }
 
 #therm-body-fore{
-     position:absolute;
-     width:217px;
-     top:127px;
-     left:106px;
-     background-repeat:repeat-y;
+    position:absolute;
+    width:24px;
+    top:107px;
+    left:133px;
+    background-repeat:repeat-y;
 }
 
 #therm-bottom{
@@ -103,4 +102,3 @@
 .clear {
     clear: both;
 }
-

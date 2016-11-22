@@ -60,7 +60,7 @@ var imgsLoaded = 0;
 var tickHeight = 40;
 var mercuryHeightEmpty = 0;
 var numberStartY = 6;
-var thermTopHeight = 13;
+var thermTopHeight = 117;
 var thermBottomHeight = 51;
 var tooltipOffset = 15; 
 var heightOfBody;

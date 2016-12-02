@@ -3,8 +3,6 @@
  * modified with Tabletop by Kevin Dick - kbdick@389nm.com
 */
 
-/* global $ */
-
 (function() {
     //data connection
     // Retrieve Data from TableTop
@@ -15,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   		key: "1OVgXVxrfM13WwwjqBC4jlYlzTQuSrHrn43r5T0KWbjY", 
   		callback: showInfo,
   		parseNumbers: true,
-  		simpleSheet: true
+  		simpleSheet: true 
   		});
 });
     // callback returning data
@@ -23,6 +21,59 @@ document.addEventListener('DOMContentLoaded', function() {
 function showInfo(data, tabletop) { 
     console.log( "Here is the Audubon Thermometer Data", data); 
 
+/*editable vars
+function options(vals) {
+		var vals = [];
+		switch(options) {
+			case 'data[1].initiative':
+				vals = data[1].dollarsgoal;
+				break;
+			case 'data[2].initiative':
+				vals = data[2].dollarsgoal;
+				break;
+			case 'data[3].initiative':
+				vals = data[3].dollarsgoal;
+				break;
+			case 'data[4].initiative':
+				vals = data[4].dollarsgoal;
+				break;
+			case 'data[5].initiative':
+				vals = data[5].dollarsgoal;
+				break;
+			case 'data[6].initiative':
+				vals = data[6].dollarsgoal;
+				break;
+			case 'data[7].initiative':
+				vals = data[7].dollarsgoal;
+				break;
+			case 'data[8].initiative':
+				vals = data[8].dollarsgoal;
+				break;
+			case 'data[9].initiative':
+				vals = data[9].dollarsgoal;
+				break;
+			case 'data[10].initiative':
+				vals = data[10].dollarsgoal;
+				break;
+			case 'data[11].initiative':
+				vals = data[11].dollarsgoal;
+				break;
+			case 'data[12].initiative':
+				vals = data[12].dollarsgoal;
+				break;
+			case 'data[13].initiative':
+				vals = data[13].dollarsgoal;
+				break;
+			case 'data[14].initiative':
+				vals = data[14].dollarsgoal;
+				break;
+			case 'data[15].initiative':
+				vals = data[15].dollarsgoal;
+				break;
+			case 'data[0].initiative':
+				vals = data[0].dollarsgoal;
+		} */
+		
 var goalAmount = data[0].dollarsgoal;//how much are you trying to get
 
 /* global data */
@@ -96,8 +147,10 @@ function determineImageSet(){
 //visually create the thermometer
 function createGraphics(){
 	
-//add the html
+	//add the html
+	/* global $ */
 	$("#goal-thermometer").html(
+//        "<form action="options(vals)" method="post" name="form1" id="form1"><span>Event:</span> <input type="text" name="Code" value="" size="32" readonly="readonly" /><br /><select class="paselect" onchange="form1.elements['Code'].value = this.options[this.selectedIndex].value;"><option value="data[0].initiative">data[0].initiative</option><option value="data[1].initiative">data[1].initiative</option><option value="data[2].initiative">data[2].initiative</option></select></form>" +
 		"<div id='therm-numbers'>" + 
 		"</div>" + 
 		"<div id='therm-graphics'>" + 
@@ -110,7 +163,7 @@ function createGraphics(){
 				"<img class='tip-left' src='"+tootipPointImg+"'></img>" + 
 				"<div class='tip-middle'><p>$0</p></div>" + 
 				"<img class='tip-right' src='"+tooltipButtImg+"'></img>" + 
-			"</div>" + 
+			"</div>" +
 		"</div>"
 	);
 	
@@ -206,6 +259,7 @@ function animateThermometer(){
 		}
 	});
 	
+	
 }
 
 //format the numbers with $ and commas
@@ -216,8 +270,6 @@ function commaSeparateNumber(val){
     }
     return numberPrefix + val + numberSuffix;
 }
-
-$ ("#dollar-goal").html(commaSeparateNumber(goalAmount));
 
 // last brace is for closing tabletop callback
 }

@@ -7,6 +7,15 @@
     opacity:0;
 }
 
+#dollar-goal {
+    position: relative;
+    top: 70px;
+    left: 130px;
+    color: blue;
+    z-index: 1;
+    font-weight: 700;
+}
+
 #therm-numbers{
     width:217px;
     float:left;
@@ -22,28 +31,28 @@
 #therm-graphics{
     float:left;
     position:relative;
-    width:217px;
+    width:209px;
 }
 
 #therm-top{
     position:absolute;
     top:0;
     left:0px;
-    width:217px;
-    height:127px;
+    width:209px;
+    height:221px;
 }
 
 #therm-body-bg{
     position:absolute;
-    top:127px;
+    top:221px;
     left:0px;
-    width:217px;
+    width:209px;
 }
 
 #therm-body-mercury{
     position:absolute;
     bottom:51px;
-    left:106px;
+    left:100px;
     width: 18px;
     height:2px;
 }
@@ -51,53 +60,55 @@
 #therm-body-fore{
     position:absolute;
     width:24px;
-    top:107px;
-    left:133px;
+    top:221px;
+    left:120px;
     background-repeat:repeat-y;
 }
 
 #therm-bottom{
     position:absolute;
     left:0;
-    width:217px;
-    height:51px;
+    width:209px;
+    height:47px;
 } 
 
 #therm-tooltip{
-    position:absolute;
-    left:140px;
+    position:relative;
+    left:130px;
     width:200px;
     color:blue;
 }
 
-#therm-tooltip .tip-left{
+.tip-left{
     float:left;
     width:19px;
     height:32px;
+    display: none;
 }
 
-#therm-tooltip .tip-middle{
+.tip-middle{
     float:left;
     height:32px;
     font-size:15px;
 }
 
 #therm-tooltip .tip-middle p{
-    position:relative;
+    position:absolute;
     margin:0;
     padding-right:4px;
     padding-left:3px;
     top:6px;
     height:32px;
-    opacity:.7;
+    opacity:1;
     background-size:64px 64px;
     -moz-background-size: 100%;
 }
 
-#therm-tooltip .tip-right{
+.tip-right{
     float:left;
     width:9px;
     height:32px;
+    display: none;
 }
 
 .clear {

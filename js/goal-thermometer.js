@@ -31,7 +31,7 @@ var animationTime = 3000;//in milliseconds
 var numberPrefix = "$";//what comes before the number (set to "" if no prefix)
 var numberSuffix = "";//what goes after the number
 var tickMarkSegementCount = 4;//each segement adds 40px to the height
-var widthOfNumbers = 5;//the width in px of the numbers on the left
+var widthOfNumbers = 1;//the width in px of the numbers on the left
 
 //standard resolution images
 var glassTopImg = "images/PencilThermTop.png";

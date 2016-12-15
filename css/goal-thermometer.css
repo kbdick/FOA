@@ -1,3 +1,10 @@
+html, body, img {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
 #goal-thermometer{
     position:relative;
     padding:0;
@@ -10,7 +17,7 @@
 #dollar-goal {
     position: relative;
     top: 70px;
-    left: 130px;
+    left: 90px;
     color: blue;
     z-index: 1;
     font-weight: 700;
@@ -20,6 +27,17 @@
     width:217px;
     float:left;
     opacity:.4;
+}
+
+#container{
+    margin: 0;
+    line-height: 0;
+    width: 230;
+}
+
+
+iframe{
+    display:block;
 }
 
 .therm-number{

@@ -3,6 +3,7 @@ html, body, img {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+  background-color: red;
 }
 
 #goal-thermometer{

@@ -217,7 +217,9 @@ function commaSeparateNumber(val){
     return numberPrefix + val + numberSuffix;
 }
 
-$ ("#dollar-goal").html(commaSeparateNumber(goalAmount));
+$ ("#dollar-goal").html("Annual Donations Goal");
+
+// $ ("#dollar-goal").html(commaSeparateNumber(goalAmount));
 
 // last brace is for closing tabletop callback
 }

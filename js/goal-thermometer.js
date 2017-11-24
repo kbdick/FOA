@@ -64,7 +64,7 @@ var mercuryHeightEmpty = 0;
 var numberStartY = 6;
 var thermTopHeight = 221;
 var thermBottomHeight = 47;
-var tooltipOffset = 15; 
+var tooltipOffset = 20;
 var heightOfBody;
 var mercuryId;
 var tooltipId;

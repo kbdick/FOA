@@ -217,7 +217,7 @@ function commaSeparateNumber(val){
     return numberPrefix + val + numberSuffix;
 }
 
-$ ("#dollar-goal").html("Annual Donations Goal");
+$ ("#dollar-goal").html("$375,000");
 
 // $ ("#dollar-goal").html(commaSeparateNumber(goalAmount));
 
